@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_size"
+    android:layout_height="@dimen/dialog_size">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background_dialog"
+        app:cardCornerRadius="@dimen/cornerRadius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_background_dialog"
+            android:gravity="center"
+            android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/ic_background_edit_cell"
+                    android:drawableEnd="@drawable/ic_currency_rub"
+                    android:ems="10"
+                    android:hint="@string/editCount_hint"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:paddingHorizontal="@dimen/edit_paddingHorizontal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_space"/>
+
+            <EditText
+                android:id="@+id/editWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_height"
+                android:background="@drawable/ic_background_edit_cell"
+                android:drawableEnd="@drawable/ic_weight_gram"
+                android:ems="10"
+                android:hint="@string/editWeight_hint"
+                android:inputType="number"
+                android:singleLine="true"
+                android:paddingHorizontal="@dimen/edit_paddingHorizontal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_space"/>
+
+            <ImageButton
+                android:id="@+id/btnAdd"
+                android:layout_width="@dimen/dialog_btnAddSize"
+                android:layout_height="@dimen/dialog_btnAddSize"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_round_add_circle" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

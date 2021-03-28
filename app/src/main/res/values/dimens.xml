@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cornerRadius">15dp</dimen>
+    <dimen name="main_paddingHorizontal">20dp</dimen>
+
+    <dimen name="edit_height">60dp</dimen>
+    <dimen name="edit_paddingHorizontal">10dp</dimen>
+
+    <dimen name="dialog_size">320dp</dimen>
+    <dimen name="dialog_space">20dp</dimen>
+    <dimen name="dialog_btnAddSize">80dp</dimen>
+
+    <dimen name="btnAdd_marginTop">25dp</dimen>
+
+    <dimen name="card_height">75dp</dimen>
+    <dimen name="card_marginHorizontal">20dp</dimen>
+    <dimen name="card_marginVertical">10dp</dimen>
+    <dimen name="card_elevation">10dp</dimen>
+    <dimen name="card_sizeTxtSum">26sp</dimen>
+    <dimen name="card_sizeTxtDiv">26sp</dimen>
+    <dimen name="card_sizeTxtWeight">16sp</dimen>
+    <dimen name="card_resultWidth">100dp</dimen>
+    <dimen name="card_resultHeight">60dp</dimen>
+    <dimen name="card_sizeTxtResult">26sp</dimen>
+    <dimen name="card_btnDeleteSize">30dp</dimen>
+
+    <dimen name="result_shadowBottom">3dp</dimen>
+
+    <dimen name="borderError_cornerRadius">10dp</dimen>
+    <dimen name="borderError_width">3dp</dimen>
+</resources>

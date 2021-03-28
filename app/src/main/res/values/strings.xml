@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Что дешевле?</string>
+    <string name="editCount_hint">Введите цену</string>
+    <string name="editWeight_hint">Введите вес</string>
+    <string name="card_div">/</string>
+    <string name="card_btnDeleteDescription">Удалить</string>
+</resources>

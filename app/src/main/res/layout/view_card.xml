@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="CardBinding">
+        <variable
+            name="viewModel"
+            type="vic.van.cheap.CardViewModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mainCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:cardElevation="@dimen/card_elevation"
+        android:layout_marginVertical="@dimen/card_marginVertical">
+
+        <RelativeLayout
+            android:id="@+id/parentRelative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/card_marginHorizontal" >
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.amount}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/card_sizeTxtSum"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/card_div"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/card_sizeTxtDiv"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.weight}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/card_sizeTxtWeight"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewResult"
+                android:layout_width="@dimen/card_resultWidth"
+                android:layout_height="@dimen/card_resultHeight"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="top"
+                android:layout_toStartOf="@+id/btnDelete"
+                android:background="@{viewModel.backgroundResult}" />
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="@dimen/card_resultWidth"
+                android:layout_height="@dimen/card_resultHeight"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/btnDelete"
+                android:gravity="center"
+                android:text="@{viewModel.result.toString()}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_sizeTxtResult"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="@dimen/card_btnDeleteSize"
+                android:layout_height="@dimen/card_btnDeleteSize"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/card_marginHorizontal"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/card_btnDeleteDescription"
+                android:src="@drawable/ic_delete" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
+

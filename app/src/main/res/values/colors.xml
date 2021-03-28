@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF757575</color>
+    <color name="light_gray">#D5D0D0</color>
+    <color name="purple_main">#4A294B</color>
+    <color name="blue_main">#0B4653</color>
+    <color name="iconColor">#2E2D2B</color>
+
+    <color name="card_color">#EDEDED</color>
+
+    <color name="resultShadow">#3C000000</color>
+    <color name="resultBad">#E15252</color>
+    <color name="resultBad_light">#F1C49A</color>
+    <color name="resultGood">#33DE63</color>
+    <color name="resultGood_light">#C7F19C</color>
+    <color name="resultNormal">#BABCBA</color>
+    <color name="resultNormal_light">#E7E8E6</color>
+
+    <color name="borderError">#E15252</color>
+
+</resources>
